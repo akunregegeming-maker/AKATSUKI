@@ -1,0 +1,15 @@
+<!DOCTYPE html><html lang='id'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>AKATSUKI Official</title><style>
+body{margin:0;font-family:Arial;background:#0d1117;color:#fff}header{position:sticky;top:0;background:#111;padding:15px;display:flex;justify-content:space-between}.logo{color:#0ff;font-weight:bold}.hero{padding:80px 20px;text-align:center;background:linear-gradient(#0008,#0008),url('https://6a7fce627cad5075a99cb5b1.imgix.net/sandbox/235468.jpg') center/cover;height:60vh}.btn{background:#0ff;color:#000;padding:12px 24px;border-radius:30px;text-decoration:none}.wrap{padding:40px 8%}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}.card,.album-item{background:#161b22;border-radius:16px;padding:20px}.album-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}.album-item img{width:100%;height:180px;object-fit:cover;border-radius:10px}footer{text-align:center;padding:20px;background:#000;color:#888}
+</style></head><body>
+<header><div class='logo'>AKATSUKI</div><nav>Home About Album Contact</nav></header>
+<section class='hero'><h1>WELCOME TO AKATSUKI</h1><p>Website modern futuristik.</p><a class='btn' href='#album'>Jelajahi</a></section>
+<div class='wrap'><h2>Layanan</h2><div class='cards'><div class='card'>⚡ Cepat</div><div class='card'>🎨 Modern</div><div class='card'>📱 Responsive</div></div>
+<h2 id='album'>GALERY THC</h2><input id='upload' type='file' multiple accept='image/*'><div class='album-grid' id='grid'>
+<div class='album-item'><img src='https://picsum.photos/id/43/1280/831'><p>AKATSUKI</p></div></div></div>
+<footer>©2023 AKATSUKI</footer>
+<script>
+
+  
+  upload.onchange=()=>{[...upload.files].forEach(f=>{let r=new FileReader();r.onload=e=>{let d=document.createElement('div');d.className='album-item';d.innerHTML='<img src="'+e.target.result+'"><p>'+f.name+'</p>';grid.appendChild(d)};r.readAsDataURL(f);});}
+</script></body></html>
